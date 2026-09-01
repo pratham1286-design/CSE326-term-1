@@ -6,7 +6,7 @@
     <title><Form></Form></title>
 </head>
 <body>
-    <form>
+    <form><!-- by default form is Get attribute -->
         <h3>Personal Information</h3>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -18,6 +18,19 @@
         <input type="number" id="Age" name="Age" min="1" max="120" required>
         <br><br>
         <input type="submit" value="Submit">
+        <br><br>
+        <input type="text" id="text" name="text" placeholder="Enter text" required>
+        <br><br>
+        <input type="date" id="date" name="date" required>
+        <br><br>
+        <input type="time" id="time" name="time" required>
+        <br><br>
+        <input type="color" id="color" name="color" required>
+        <br><br>
+        <input type="range" id="range" name="range" min="0" max="100" required>
+        <br><br>
+        <input type="file" id="file" name="file" required>
+        <br><br>
     </form>
 </body>
 </html>

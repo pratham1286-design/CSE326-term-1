@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><Form></Form></title>
+    <title>Form</title>
 </head>
 <body>
-    <form><!-- by default form is Get attribute -->
+    <form method="get"><!-- by default form is Get attribute -->
         <h3>Personal Information</h3>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -36,6 +36,12 @@
         <br>
         <input type="radio" id="female" name="gender" value="female" required>
         <label for="female">Female</label>
+        <br><br>
+        <input type="checkbox" id="subscribeyes" name="subscribe" value="yes">
+        <label for="subscribeyes">Subscribe to newsletter</label>
+        <br><br>
+        <input type="checkbox" id="subscribeno" name="subscribe" value="no">
+        <label for="subscribeno">Do not subscribe to newsletter</label>
         <br><br>
     </form>
 </body>

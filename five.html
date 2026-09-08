@@ -23,6 +23,16 @@
             <h2>Section 2</h2>
             <p>This is the second section of the main content.</p>
         </section>
+        <ul>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3
+                <ol>
+                    <li>Sub Item 1</li>
+                    <li>Sub Item 2</li>
+                </ol><!-- we can make nested list by typing ol inside li and also outside li-->
+            </li>
+        </ul>
         <!-- now making inpage hyperlink -->
         <p><a href="#intro">Go to Introduction</a></p><!-- use id attribute to specify the target for the inpage link -->
         <p><a href="#details">Go to Details</a></p>
@@ -35,6 +45,14 @@
     <aside><!--we can write the aside tag outside of the main tag and same goes with footer-->
         <h4>Did You Know?</h4>
         <p>Using semantic elements can improve the structure and meaning of your web pages.</p>
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="40" fill="maroon" />
+        </svg>
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(50, 50) rotate(45)">
+                <rect x="0" y="0" width="40" height="40" fill="red" />
+            </g>
+        </svg> 
     </aside>
     <footer>
         <p>&copy; 2024 Semantic HTML Example</p>

@@ -19,3 +19,9 @@ ul{
     background-color: rgb(220, 23, 148);
     color: white;
 }
+body{
+    background-image: url('IMG20260608120333.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Times, serif;
+}

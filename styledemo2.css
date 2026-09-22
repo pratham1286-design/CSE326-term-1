@@ -6,4 +6,12 @@
     display: flex;
     font-size: 5vh;
     justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 1000;
+    font-style: italic;
+}
+p{
+    color: rgb(50, 36, 120);
+    text-align: center;
+    line-height: 3;
 }

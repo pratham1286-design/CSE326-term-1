@@ -12,6 +12,19 @@
 }
 p{
     color: rgb(50, 36, 120);
-    text-align: center;
+    text-align: justify;
     line-height: 3;
+    background-color: rgb(195, 253, 5);
+    text-decoration: line-through;
+    text-transform: uppercase;
+    color:#2563eb
+    text-shadow : 2px 2px 4px black;
+    border:outset 5px #CC00AA;
+    margin: 50px;
+    border-radius: 20px 5px;
+    box-shadow: 10px 10px 5px #888888;
+    position: relative;
+}
+table{
+    border:dashed 5px red
 }

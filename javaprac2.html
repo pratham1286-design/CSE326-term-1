@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT PARC 2</title>
+    <script>
+        function calculateGrade() {
+            var englishmarks = parseInt(document.getElementById("englishmarks").value);
+            var mathmarks = parseInt(document.getElementById("mathmarks").value);
+            var sciencemarks = parseInt(document.getElementById("sciencemarks").value);
+            var average = (englishmarks + mathmarks + sciencemarks) / 3;
+            var grade;
+
+            if (average >= 90) {
+                grade = "A";
+            } else if (average >= 80) {
+                grade = "B";
+            } else if (average >= 70) {
+                grade = "C";
+            } else if (average >= 60) {
+                grade = "D";
+            } else {
+                grade = "F";
+            }
+
+            document.getElementById("result").innerHTML = `Your average marks: ${average.toFixed(2)}<br>Your grade: ${grade}`;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        /*document.write("<h1>Grade Calculator</h1>");
+        let englishmarks = parseInt(prompt("Enter your English marks"));
+        let mathmarks = parseInt(prompt("Enter your Math marks"));
+        let sciencemarks = parseInt(prompt("Enter your Science marks"));
+        button = (englishmarks + mathmarks + sciencemarks) / 3; */
+    </script>
+    <h1>Grade Calculator</h1>
+    <form>
+        <label for="englishmarks">Enter your English marks:</label>
+        <input type="number" id="englishmarks" name="englishmarks"><br><br>
+
+        <label for="mathmarks">Enter your Math marks:</label>
+        <input type="number" id="mathmarks" name="mathmarks"><br><br>
+
+        <label for="sciencemarks">Enter your Science marks:</label>
+        <input type="number" id="sciencemarks" name="sciencemarks"><br><br>
+
+        <button type="button" onclick="calculateGrade()">Calculate Grade</button>
+    </form>
+    <p id="result"></p>
+</body>
+</html>

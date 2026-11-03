@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA PRAC 5</title>
+    <script>
+        function Reverseofthenumber() {
+            const input = document.getElementById("n1").value;
+            const result = document.getElementById("result");
+
+            if (input === "") {
+                result.textContent = "Please enter a number.";
+                return;
+            }
+
+            const number = Number(input);
+            let reversedNumber = 0;
+            let tempNumber = number;
+
+            while (tempNumber > 0) {
+                const digit = tempNumber % 10;
+                reversedNumber = reversedNumber * 10 + digit;
+                tempNumber = Math.floor(tempNumber / 10);
+            }
+
+            result.textContent = `Reverse of ${number} is ${reversedNumber}.`;
+        
+        if (number == reversedNumber) {
+            result.textContent += ` ${number} is a palindrome.`;
+        } else {
+            result.textContent += ` ${number} is not a palindrome.`;
+        }
+    }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="n1">Enter the Number:</label>
+        <input type="number" id="n1" name="number"><br><br>
+        <button onclick="Reverseofthenumber()" type="button">Calculate Reverse</button>
+    </form>
+    <p id="result"></p>
+</body>
+</html>

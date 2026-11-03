@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA PRAC 6</title>
+</head>
+<script>
+    function Armstrong() {
+        const input = document.getElementById("n1").value;
+        const result = document.getElementById("result");
+
+        if (input === "") {
+            result.textContent = "Please enter a number.";
+            return;
+        }
+
+        const number = Number(input);
+        let sum = 0;
+        let tempNumber = number;
+        const numDigits = number.toString().length;
+
+        while (tempNumber > 0) {
+            const digit = tempNumber % 10;
+            sum += Math.pow(digit, numDigits);
+            tempNumber = Math.floor(tempNumber / 10);
+        }
+
+        if (sum === number) {
+            result.textContent = `${number} is an Armstrong number.`;
+        } else {
+            result.textContent = `${number} is not an Armstrong number.`;
+        }
+    }
+</script>
+<body>
+    <form>
+        <label for="n1">Enter the Number:</label>
+        <input type="number" id="n1" name="number"><br><br>
+        <button onclick="Armstrong()" type="button">Check Armstrong Number</button>
+    </form>
+    <p id="result"></p>
+</body>
+</html>

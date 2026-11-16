@@ -7,11 +7,32 @@
 </head>
 <body>
     <h3>ARRAY</h3>
+    <p id="demo"></p>
+    <label for="fruits">Fruits:</label>
+    <input type="text" id="fruits" name="fruits"><br><br>
+    <button onclick="addFruit()">Add Fruit</button><br><br>
+    <button onclick="popFruit()">Remove Fruit</button><br><br>
     <script>
-        var fruits = ["Apple", "Banana", "Mango", "Orange"];
+        var fruits = ["Apple", 12 , 43.5 , true];
         for (var i = 0; i < fruits.length; i++) {
             document.write(fruits[i] + "<br>");
+            
+        }
+        document.getElementById("demo").innerHTML = fruits[1];
+        function addFruit() {
+            var fruit = document.getElementById("fruits").value;
+            fruits.push(fruit);
+            document.write(fruits + "<br>");
+            for (var i = 0; i < fruits.length; i++) {
+            document.write(fruits[i] + "<br>");}
+        }
+        function popFruit() {
+            fruits.pop();
+            document.write(fruits + "<br>");
+            for (var i = 0; i < fruits.length; i++) {
+            document.write(fruits[i] + "<br>");}
         }
     </script>
+    
 </body>
 </html>

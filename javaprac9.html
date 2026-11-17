@@ -14,6 +14,20 @@
         document.write(str.charAt(0) + "<br>");
         document.write(str.indexOf("World") + "<br>");
         document.write(str.substring(0, 5) + "<br>");
+        var num = [10,20,30,40,50];
+        <!-- Using for loop for iterable items which uses the "of" operator -->
+        for (var n of num) {
+            document.write(n + "<br>");
+        }
+        let student = {
+            name: "John",
+            age: 20,
+            grade: "A"
+        };
+        <!-- Using for loop for iterable items which uses the "in" operator -->
+        for (var key in student) {
+            document.write(key + ": " + student[key] + "<br>");
+        }
     </script>
 </body>
 </html>
